@@ -1,12 +1,12 @@
 CALCOLARE IL PREZZO DEL BIGLIETTO DEL TRENO, TENENDO IN CONSIDERAZIONE I CHILOMETRI PERCORSI E L'ETA' DEL PASSEGGERO.
 
 1. INPUT
-    - [ ] Chiedere all'utente quanti chilometri deve percorrere
-    - [ ] Chiedere all'utente quanti anni ha 
+    - [ ] Chiedere al passeggero quanti chilometri deve percorrere
+    - [ ] Chiedere al passeggero quanti anni ha 
 
 2. ESECUZIONE LOGICA
     - [ ] Calcolare il prezzo in base ai chilometri
-    - [ ] Calcolare il prezzo in base all' età del passeggero
+    - [ ] Calcolare lo sconto se c'è in base all' età del passeggero
     - [ ] Calcolare il prezzo totale del biglietto
 
     Se (il passeggero è minorenne)
