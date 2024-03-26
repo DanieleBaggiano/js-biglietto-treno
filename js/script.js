@@ -15,15 +15,19 @@ console.log(userAge, typeof userAge);
 const prezzoAlKm = 0.21;
 let total = userKm * prezzoAlKm;
 
-if (userAge < 18) {
-    let scontoMinorenne = total * 0.80;
-    console.log("Il passeggero ha diritto al 20% di sconto." + scontoMinorenne);
-    document.getElementById("prezzototale").innerHTML = `${total.toFixed(2)} €, ${scontoMinorenne.toFixed(2)} €`
-} else if (userAge > 65) {
-    let scontoAnziani = total * 0.60;
-    console.log("Il passeggero ha diritto al 40% di sconto." + scontoAnziani);
-    document.getElementById("prezzototale").innerHTML = `${total.toFixed(2)} €, ${scontoAnziani.toFixed(2)} €`
+if (isNaN(userKm) === false && isNaN(userAge) === false && userKm > 0 && userAge > 0) {
+    if (userAge < 18) {
+        let scontoMinorenne = total * 0.80;
+        console.log("Il passeggero ha diritto al 20% di sconto." + scontoMinorenne);
+        document.getElementById("prezzototale").innerHTML = `${total.toFixed(2)} €, ${scontoMinorenne.toFixed(2)} €`
+    } else if (userAge > 65) {
+        let scontoAnziani = total * 0.60;
+        console.log("Il passeggero ha diritto al 40% di sconto." + scontoAnziani);
+        document.getElementById("prezzototale").innerHTML = `${total.toFixed(2)} €, ${scontoAnziani.toFixed(2)} €`
+    } else {
+        console.log(total.toFixed(2));
+        document.getElementById("prezzototale").innerHTML = `${total.toFixed(2)} €`
+    }
 } else {
-    console.log(total.toFixed(2));
-    document.getElementById("prezzototale").innerHTML = `${total.toFixed(2)} €`
+    alert ("Dati errati!");
 }
